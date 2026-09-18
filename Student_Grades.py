@@ -46,7 +46,7 @@ while True:
             print("No students data added yet.")
 
     elif choice == "4":
-        print("Exitinf code.")
+        print("Exit code.")
         break
 
     else:
