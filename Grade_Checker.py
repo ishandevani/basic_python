@@ -8,17 +8,43 @@
 # Use a basic if / else statement to determine the grade.
 
 
-score = float(input("Enter the score: "))       # Student enter the score
+def addition(a,b,c):
+    add = a + b + c
+    return add
 
-if score<=0 or score>100:                       # check if the score is valid or not
-    print("Enter valid score")
-elif score>=90:
-    print("Grade A")
-elif score>=80:
-    print("Grade B")
-elif score>=70:
-    print("Grade C")
-elif score>=60:
-    print("Grade D")
-else:
-    print("Grade F")
+
+def multiflication(add):
+    multi = add * 100
+    return multi
+
+def division(multi):
+    dive = multi/300
+    return dive
+
+def grade(dive):
+    if dive<=0 or dive>100:                       # check if the score is valid or not
+        print("Enter valid score")
+    elif dive >= 90:
+        print("Grade A")
+    elif dive>=80:
+        print("Grade B")
+    elif dive>=70:
+        print("Grade C")
+    elif dive>=60:
+        print("Grade D")
+    else:
+        return "Grade F"  
+
+math = int(input("Enter the math score: "))
+sci = int(input("Enter the science score: "))
+eng = int(input("Enter the English score: "))
+
+add = addition(math, sci, eng)
+print(f"your total score is {add} out of 300.")
+
+multi = multiflication(add)
+
+dive = int(division(multi))
+print(f"you percentage is {dive}")
+
+grade(dive)
