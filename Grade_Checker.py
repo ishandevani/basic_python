@@ -13,7 +13,7 @@ def addition(a,b,c):
     return add
 
 
-def multiflication(add):
+def multiplication(add):
     multi = add * 100
     return multi
 
