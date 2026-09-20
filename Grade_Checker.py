@@ -42,7 +42,7 @@ eng = int(input("Enter the English score: "))
 add = addition(math, sci, eng)
 print(f"your total score is {add} out of 300.")
 
-multi = multiflication(add)
+multi = multiplication(add)
 
 dive = int(division(multi))
 print(f"you percentage is {dive}")
